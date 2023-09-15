@@ -1,0 +1,19 @@
+server:
+  port: 8011
+spring:
+  data:
+    redis:
+      host: 172.28.164.198
+      port: 6379
+  datasource:
+    url: jdbc:mysql://172.28.164.198:3306/passjava?characterEncoding=utf-8
+    username: root
+    password: estrauser
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+
+mybatis:
+  mapper-locations: classpath:mapper/*mapper.xml
